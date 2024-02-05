@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function HomePage() {
@@ -8,7 +9,11 @@ export default function HomePage() {
       </header>
       <hr />
       <div className="flex items-center justify-center">
-      <button className="bg-blue">Click me</button>
+        <Link href="/fragment">
+          <div className="bg-blue mt-9 w-52 h-12 rounded-lg flex items-center justify-center">
+            <span className="text-white">Kampanya Oluştur</span>
+          </div>
+        </Link>
       </div>
     </main>
   );
