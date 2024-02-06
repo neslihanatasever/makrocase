@@ -19,6 +19,7 @@ const config: Config = {
         darkgray: "#667085",
         lightgray: "#A2ABBA",
         white: "#FFFFFF",
+        buttongray: "#E9EBF0"
       },
     },
   },
