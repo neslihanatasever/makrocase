@@ -1,30 +1,11 @@
 import React from "react";
+import ButtonComponent from "../../components/buttoncomp/page";
+import HeaderComponent from "@/app/components/headercomp/page";
 
 const FragmentPage = () => {
   return (
     <main className="">
-      <div className="flex items-center justify-between p-9">
-        <div>
-          <h1 className="text-3xl text-xl ml-32">Kampanya Oluştur</h1>
-        </div>
-
-        <div className="flex gap-8 items-center justify-center flex-grow mr-96">
-          <a href="#" className="text-lightgray hover:text-gray-700">
-            Parçan
-          </a>
-          <a href="#" className="text-lightgray hover:text-gray-700">
-            Detaylar
-          </a>
-          <a href="#" className="text-lightgray hover:text-gray-700">
-            Kampanyan
-          </a>
-          <a href="#" className="text-lightgray hover:text-gray-700">
-            Ödeme
-          </a>
-        </div>
-      </div>
-      <hr />
-
+      <HeaderComponent />
       <div className="w-4/5 h-52 flex flex-col ml-40 border-solid border-2 rounded-3xl mt-24">
         <div className="m-5 flex flex-col">
           <label className="font">Parçanı Seç</label>
@@ -49,13 +30,7 @@ const FragmentPage = () => {
           <label className="ml-2 mb-1">Parçam Yayında Değil</label>
         </div>
       </div>
-
-      <div className="flex justify-end items-center mr-40 mt-10 gap-3">
-        <button className="bg-buttongray w-40 h-10 rounded-xl">Geri Dön</button>
-        <button className="bg-blue w-40 h-10 rounded-xl text-white">
-          Devam Et
-        </button>
-      </div>
+      <ButtonComponent />
     </main>
   );
 };
