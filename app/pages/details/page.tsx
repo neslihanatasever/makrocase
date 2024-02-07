@@ -1,3 +1,4 @@
+import ButtonComponent from "@/app/components/buttoncomp/page";
 import HeaderComponent from "@/app/components/headercomp/page";
 import React from "react";
 
@@ -46,6 +47,7 @@ export default function DetailsPage() {
           />
         </div>
       </div>
+      <ButtonComponent />
     </main>
   );
 }
