@@ -1,11 +1,10 @@
 import React from "react";
 import ButtonComponent from "../../components/buttoncomp/page";
-import HeaderComponent from "@/app/components/headercomp/page";
+import Link from "next/link";
 
 const FragmentPage = () => {
   return (
     <main className="">
-      <HeaderComponent />
       <div className="w-4/5 h-52 flex flex-col ml-40 border-solid border-2 rounded-3xl mt-24">
         <div className="m-5 flex flex-col">
           <label className="font">Parçanı Seç</label>

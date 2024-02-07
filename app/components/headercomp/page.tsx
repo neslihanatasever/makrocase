@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 const HeaderComponent = () => {
   return (
-    <main>
-        <div className="flex items-center justify-between p-9">
+    <header>
+      <div className="flex items-center justify-between p-9">
         <div>
           <h1 className="text-3xl text-xl ml-32">Kampanya Oluştur</h1>
         </div>
@@ -24,8 +24,8 @@ const HeaderComponent = () => {
         </div>
       </div>
       <hr />
-    </main>
-  )
-}
+    </header>
+  );
+};
 
-export default HeaderComponent
+export default HeaderComponent;

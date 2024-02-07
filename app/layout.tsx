@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Alata } from "next/font/google";
 import "./globals.css";
+import HeaderComponent from "./components/headercomp/page";
 
 const inter = Alata({
   subsets: ["latin"],
@@ -19,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+         <HeaderComponent /> {/*bu ilk sayfada gözükmeyecek */}
+        {children}</body>
     </html>
   );
 }
