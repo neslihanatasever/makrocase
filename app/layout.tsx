@@ -5,7 +5,7 @@ import HeaderComponent from "./components/headercomp/page";
 
 const inter = Alata({
   subsets: ["latin"],
-  weight:  "400"
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -15,14 +15,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  showHeader = true,
 }: Readonly<{
   children: React.ReactNode;
+  showHeader?: boolean;
 }>) {
   return (
     <html lang="en">
       <body className={inter.className}>
-         <HeaderComponent /> {/*bu ilk sayfada gözükmeyecek */}
-        {children}</body>
+        {showHeader && <HeaderComponent />}
+        {children}
+      </body>
     </html>
   );
 }

@@ -1,9 +1,11 @@
 import Link from "next/link";
 import React from "react";
+import RootLayout from "./layout";
 
 export default function HomePage() {
   return (
-    <main className="">
+    <RootLayout showHeader={false}>
+    <main  className="">
       <header className="flex items-center justify-center p-5">
         <h1 className="text-3xl text-xxl">makromusic Task</h1>
       </header>
@@ -16,5 +18,6 @@ export default function HomePage() {
         </Link>
       </div>
     </main>
+    </RootLayout>
   );
 }
