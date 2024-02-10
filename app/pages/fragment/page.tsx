@@ -1,6 +1,7 @@
 import React from "react";
 import ButtonComponent from "../../components/buttoncomp/page";
 import Link from "next/link";
+import HeaderComponent from "@/app/components/headercomp/page";
 
 const FragmentPage = () => {
   return (
@@ -29,7 +30,20 @@ const FragmentPage = () => {
           <label className="ml-2 mb-1">Parçam Yayında Değil</label>
         </div>
       </div>
-      <ButtonComponent />
+      <div>
+        <div className="flex justify-end items-center mr-40 mt-10 gap-3">
+          <Link href={"/"}>
+            <button className="bg-buttongray w-40 h-10 rounded-xl">
+              Geri Dön
+            </button>
+          </Link>
+          <Link href={"/pages/region"}>
+            <button className="bg-blue w-40 h-10 rounded-xl text-white">
+              Devam Et
+            </button>
+          </Link>
+        </div>
+      </div>
     </main>
   );
 };

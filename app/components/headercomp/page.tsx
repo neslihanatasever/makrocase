@@ -13,7 +13,7 @@ const HeaderComponent = () => {
             Parçan
           </a>
           <a href="#" className="text-lightgray hover:text-gray-700">
-            Detaylar
+            Bölge
           </a>
           <a href="#" className="text-lightgray hover:text-gray-700">
             Kampanyan

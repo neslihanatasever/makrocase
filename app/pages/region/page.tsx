@@ -1,5 +1,6 @@
 import ButtonComponent from "@/app/components/buttoncomp/page";
 import HeaderComponent from "@/app/components/headercomp/page";
+import Link from "next/link";
 import React from "react";
 
 export default function DetailsPage() {
@@ -7,9 +8,9 @@ export default function DetailsPage() {
     <main>
       <div className="w-4/5 h-40 flex flex-col ml-40 border-solid border-2 rounded-3xl mt-10">
         <div className="m-5 flex flex-col">
-          <label className="font">Parçanı Seç</label>
+          <label className="font">Bölgeni Seç</label>
           <label className="text-lightgray">
-            Kampanyayı oluşturmak istediğin parçayı seç
+            Kampanyayı yayınlamak istediğin bölgeyi seç
           </label>
         </div>
 
@@ -33,9 +34,9 @@ export default function DetailsPage() {
 
       <div className="w-4/5 h-40 flex flex-col ml-40 border-solid border-2 rounded-3xl mt-10">
         <div className="m-5 flex flex-col">
-          <label className="font">Parçanı Seç</label>
+          <label className="font">Parçanın türünü seç</label>
           <label className="text-lightgray">
-            Kampanyayı oluşturmak istediğin parçayı seç
+            Seçtiğin parçanın türünü belirle
           </label>
         </div>
 
@@ -47,7 +48,20 @@ export default function DetailsPage() {
           />
         </div>
       </div>
-      <ButtonComponent />
+      <div>
+        <div className="flex justify-end items-center mr-40 mt-10 gap-3">
+          <Link href={"/pages/fragment"}>
+            <button className="bg-buttongray w-40 h-10 rounded-xl">
+              Geri Dön
+            </button>
+          </Link>
+          <Link href={"/pages/package"}>
+            <button className="bg-blue w-40 h-10 rounded-xl text-white">
+              Devam Et
+            </button>
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }
