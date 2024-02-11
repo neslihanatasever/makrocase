@@ -16,6 +16,7 @@ const FragmentPage = () => {
         `https://makromusic-web-task-api.onrender.com/search-on-spotify?q=${searchInput}`
       );
       if (response.status === 200) {
+        console.log(response.data);
         setSearchResults(response.data);
       } else {
         console.error(response.statusText);
@@ -46,8 +47,8 @@ const FragmentPage = () => {
   };
 
   return (
-    <main className="">
-      <div className="w-4/5 min-h-52 flex flex-col ml-40 border-solid border-2 rounded-3xl mt-24 ">
+    <main className="container mx-auto ">
+      <div className="w-full min-h-52 flex flex-col border-solid border-2 rounded-3xl mt-24 ">
         <div className="m-5 flex flex-col">
           <label className="font">Parçanı Seç</label>
           <label className="text-lightgray">
@@ -55,13 +56,13 @@ const FragmentPage = () => {
           </label>
         </div>
 
-        <div className="ml-4">
+        <div className="ml-4 mr-4">
           <input
             
             onFocus={() => setIsInputFocused(true)}
             onBlur={() => setTimeout(() => setIsInputFocused(false), 200)}
             type="text"
-            className="w-[90%] h-10 border-solid border-2 rounded-xl pl-3"
+            className="w-full h-10 border-solid border-2 rounded-xl pl-3"
             placeholder="Spotify'da Ara..."
             onKeyDown={(e) => {
               if (e.key === "Enter") {

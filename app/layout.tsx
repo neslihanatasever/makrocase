@@ -3,6 +3,7 @@ import { Alata } from "next/font/google";
 import "./globals.css";
 import HeaderComponent from "./components/headercomp/page";
 
+
 const inter = Alata({
   subsets: ["latin"],
   weight: "400",

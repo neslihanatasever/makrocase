@@ -1,9 +1,14 @@
+"use client";
+import TagInput from "@/app/components/tagInput";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
+import { useStore } from "@/app/store/Data";
 
 export default function DetailsPage() {
+
+  const region = useStore(state => state.get_campaign)
   return (
-    <main className="container mx-auto">
+    <main className="container mx-auto  ">
       <div className="w-full min-h-40 flex flex-col  border-solid border-2 rounded-3xl mt-10 ">
         <div className="m-5 flex flex-col">
           <label className="font">Bölgeni Seç</label>
@@ -12,23 +17,20 @@ export default function DetailsPage() {
           </label>
         </div>
 
-        <div className="grid grid-cols-2 gap-2 w-full  ">
+        <div className="grid grid-cols-2 gap-2 w-full mb-5 ">
           <div>
-            <input className="hidden" id="radio_1" type="radio" name="radio" />
+            <input className="hidden" id="radio_1" type="radio" name="radio"/>
             <label
-              className="flex flex-col p-4 border-2 border-gray-400 cursor-pointer"
+              className="flex flex-col *:border-solid border-2 rounded-xl  cursor-pointer h-10 px-2 ml-4 justify-center "
               htmlFor="radio_1"
             >
-              Türkiye 
+              Türkiye
             </label>
           </div>
-
-
-
           <div>
-            <input className="hidden" id="radio_2" type="radio" name="radio" />
+            <input className="hidden" id="radio_2" type="radio" name="radio"/> 
             <label
-              className="flex flex-col p-4 border-2 border-gray-400 cursor-pointer"
+              className="flex flex-col *:border-solid border-2 rounded-xl  cursor-pointer h-10 px-2 mr-4 justify-center"
               htmlFor="radio_2"
             >
               Global
@@ -37,20 +39,16 @@ export default function DetailsPage() {
         </div>
         </div>
 
-      <div className="h-40 flex flex-col border-solid border-2 rounded-3xl mt-10">
+      <div className="min-h-40 flex flex-col border-solid border-2 rounded-3xl mt-10">
         <div className="m-5 flex flex-col">
           <label className="font">Parçanın türünü seç</label>
-          <label className="text-lightgray">
+          <label className=" text-lightgray">
             Seçtiğin parçanın türünü belirle
           </label>
         </div>
 
-        <div className="ml-4">
-          <input
-            type="text"
-            className="w-[90%] h-10 border-solid border-2 rounded-xl pl-3"
-            placeholder="Spotify'da Ara..."
-          />
+        <div className=" mb-5">
+          <TagInput />
         </div>
       </div>
       <div>
@@ -70,3 +68,4 @@ export default function DetailsPage() {
     </main>
   );
 }
+

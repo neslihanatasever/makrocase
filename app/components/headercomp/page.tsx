@@ -2,13 +2,14 @@ import React from "react";
 
 const HeaderComponent = () => {
   return (
-    <header>
-      <div className="flex items-center justify-between p-9">
+    <header className="">
+      <div className=" container mx-auto">
+      <div className="flex items-center justify-between py-9">
         <div>
-          <h1 className="text-3xl text-xl ml-32">Kampanya Oluştur</h1>
+          <h1 className="text-3xl text-xl ">Kampanya Oluştur</h1>
         </div>
 
-        <div className="flex gap-8 items-center justify-center flex-grow mr-96">
+        <div className="flex gap-8 items-center justify-center ">
           <a href="#" className="text-lightgray hover:text-gray-700">
             Parçan
           </a>
@@ -22,6 +23,10 @@ const HeaderComponent = () => {
             Ödeme
           </a>
         </div>
+
+        <div className="w-[200px]"></div>
+        
+      </div>
       </div>
       <hr />
     </header>
