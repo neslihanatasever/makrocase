@@ -1,12 +1,10 @@
-import ButtonComponent from "@/app/components/buttoncomp/page";
-import HeaderComponent from "@/app/components/headercomp/page";
 import Link from "next/link";
 import React from "react";
 
 export default function DetailsPage() {
   return (
-    <main>
-      <div className="w-4/5 h-40 flex flex-col ml-40 border-solid border-2 rounded-3xl mt-10">
+    <main className="container mx-auto">
+      <div className="w-full min-h-40 flex flex-col  border-solid border-2 rounded-3xl mt-10 ">
         <div className="m-5 flex flex-col">
           <label className="font">Bölgeni Seç</label>
           <label className="text-lightgray">
@@ -14,25 +12,32 @@ export default function DetailsPage() {
           </label>
         </div>
 
-        <div className="flex ml-5 gap-5">
-          <div className=" flex justify-start items-start">
-              <button
-                type="button"
-                className="w-96 h-9 border-solid border-2 rounded-lg">
-                <label className="flex pl-5">Türkiye</label>
-              </button>
+        <div className="grid grid-cols-2 gap-2 w-full  ">
+          <div>
+            <input className="hidden" id="radio_1" type="radio" name="radio" />
+            <label
+              className="flex flex-col p-4 border-2 border-gray-400 cursor-pointer"
+              htmlFor="radio_1"
+            >
+              Türkiye 
+            </label>
           </div>
-          <div className=" flex justify-start items-start">
-              <button
-                type="button"
-                className="w-96 h-9 border-solid border-2 rounded-lg">
-                <label className="flex pl-5">Global</label>
-              </button>
+
+
+
+          <div>
+            <input className="hidden" id="radio_2" type="radio" name="radio" />
+            <label
+              className="flex flex-col p-4 border-2 border-gray-400 cursor-pointer"
+              htmlFor="radio_2"
+            >
+              Global
+              </label>
           </div>
         </div>
-      </div>
+        </div>
 
-      <div className="w-4/5 h-40 flex flex-col ml-40 border-solid border-2 rounded-3xl mt-10">
+      <div className="h-40 flex flex-col border-solid border-2 rounded-3xl mt-10">
         <div className="m-5 flex flex-col">
           <label className="font">Parçanın türünü seç</label>
           <label className="text-lightgray">
