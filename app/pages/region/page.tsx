@@ -9,7 +9,7 @@ export default function DetailsPage() {
   const region = useStore(state => state.get_campaign)
   return (
     <main className="container mx-auto  ">
-      <div className="w-full min-h-40 flex flex-col  border-solid border-2 rounded-3xl mt-10 ">
+      <div className="w-full min-h-40 flex flex-col border-solid border-2 rounded-3xl mt-10 ">
         <div className="m-5 flex flex-col">
           <label className="font">Bölgeni Seç</label>
           <label className="text-lightgray">
@@ -21,7 +21,7 @@ export default function DetailsPage() {
           <div>
             <input className="hidden" id="radio_1" type="radio" name="radio"/>
             <label
-              className="flex flex-col *:border-solid border-2 rounded-xl  cursor-pointer h-10 px-2 ml-4 justify-center "
+              className="flex flex-col border-2 rounded-xl border-green cursor-pointer h-10 px-2 ml-4 justify-center "
               htmlFor="radio_1"
             >
               Türkiye
