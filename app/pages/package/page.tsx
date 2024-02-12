@@ -12,7 +12,6 @@ export default function CampaignPage() {
     let highestPrice = packages[0].price;
     let highestIndex = 0;
 
-    // Find the index of the package with the highest price
     packages.forEach((pack, index) => {
       if (pack.price > highestPrice) {
         highestPrice = pack.price;
@@ -60,7 +59,7 @@ export default function CampaignPage() {
       </div>
       <div className="mb-10">
         <div>
-          <div className="flex justify-end items-center mr-40 mt-10 gap-3">
+          <div className="flex justify-end items-center mt-10 gap-3">
             <Link href={"/pages/region"}>
               <button className="bg-buttongray w-40 h-10 rounded-xl">
                 Geri Dön

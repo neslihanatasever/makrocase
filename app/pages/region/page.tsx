@@ -52,7 +52,7 @@ export default function DetailsPage() {
         </div>
       </div>
       <div>
-        <div className="flex justify-end items-center mr-40 mt-10 gap-3">
+        <div className="flex justify-end items-center mt-10 gap-3">
           <Link href={"/pages/fragment"}>
             <button className="bg-buttongray w-40 h-10 rounded-xl">
               Geri Dön
