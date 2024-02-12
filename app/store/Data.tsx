@@ -53,5 +53,29 @@ export const useStore = create((set) => ({
       currency: "TRY",
     },
   ],
+  get_date: [
+    {
+      "id": "1",
+      "name": "Başlangıç tarihini öne çek",
+      "date_range": [
+        "2024-02-12T02:09:23.775Z",
+        "2024-02-19T02:09:23.775Z"
+      ],
+      "price": 3400,
+      "description": "İtici bir güçle kampanyana başlangıç ver",
+      "currency": "TRY"
+    },
+    {
+      "id": "2",
+      "name": "Varsayılan sıraya gir",
+      "date_range": [
+        "2024-02-29T02:09:23.775Z",
+        "2024-03-17T02:09:23.775Z"
+      ],
+      "price": 0,
+      "description": "İtici bir güçle kampanyana başlangıç ver",
+      "currency": "TRY"
+    }
+  ],
   track_genres: ["pop", "rock", "jazz"],
 }));
