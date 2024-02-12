@@ -1,17 +1,18 @@
 export default function PayPage() {
   return (
-    <main className="container mx-auto mt-10 px-5 mb-10">
-      <div className="text-3xl text-bold p-5">
+    <main className="container mx-auto mt-10  mb-10">
+     <div className=" ml-[-2] ">
+     <div className="text-3xl text-bold p-5">
         <h1>Onayla ve ödemeye geç</h1>
       </div>
       <hr />
-      <div className="flex gap-10 mt-5">
+      <div className="flex gap-16 mt-5">
         <div className="w-[60%] h-full flex flex-col">
           <div className="text-xl text-bold p-5">
             <h2>Kampanya özetin</h2>
           </div>
 
-          <div className="flex flex-col  gap-5">
+          <div className="flex flex-col  gap-">
             <div className="flex justify-between">
               <div className="flex flex-col mb-2">
                 <label className="ml-5 mb-3 text-lightgray">Tıklanma</label>
@@ -89,6 +90,7 @@ export default function PayPage() {
           </button>
         </div>
       </div>
+     </div>
     </main>
   );
 }
